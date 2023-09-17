@@ -58,7 +58,7 @@ const Todo = ({ todos }: Props) => {
           <p className="text-lg text-secondary-foreground">No todos yet</p>
         </div>
       )}
-      <ul className="container gap-6 grid grid-cols-1 md:grid-cols-4 mt-12">
+      <ul className="container gap-6 grid grid-cols-1 xl:grid-cols-4 md:grid-cols-2 lg:grid-cols-3 mt-12">
         {todos.map((todo) => {
           const isEditing = todo.id === editableTodoId;
 
