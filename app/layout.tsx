@@ -19,6 +19,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Toaster />
+        <head>
+          <link rel="manifest" href="/manifest.json" />
+          <meta name="theme-color" content="#FFFFFF" />
+        </head>
         {children}
       </body>
     </html>
