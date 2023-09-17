@@ -1,5 +1,6 @@
 import Todo from "@/components/Todo";
 import prisma from "@/prisma/client";
+import Link from "next/link";
 
 export default async function Home() {
   const todos = await prisma.todo.findMany();
@@ -15,6 +16,12 @@ export default async function Home() {
         With server actions
       </p>
       <Todo todos={todos} />
+      <Link
+        className="fixed bottom-7 right-7 bg-slate-200 p-2"
+        href="/notification"
+      >
+        Notifications
+      </Link>
     </main>
   );
 }
