@@ -20,7 +20,7 @@ export default async function Home() {
         className="fixed bottom-7 right-7 bg-slate-200 p-2"
         href="/notification"
       >
-        Notifications
+        Notifications :D
       </Link>
     </main>
   );
